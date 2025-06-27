@@ -18,3 +18,11 @@ Thumbs.db
 
 # TypeScript cache
 *.tsbuildinfo
+
+# VSIX файлы (можем включить, они меньше по размеру)
+# *.vsix
+
+# Временные файлы
+*.tmp
+*.temp
+*.bak
