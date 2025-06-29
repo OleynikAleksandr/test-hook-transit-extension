@@ -1,8 +1,8 @@
 {
-  "name": "roo-hook-tester",
-  "displayName": "Roo Hook Tester",
-  "description": "Test extension for Roo Code hook system v6 - Fixed content parsing",
-  "version": "0.0.6",
+  "name": "roo-hook-transit",
+  "displayName": "Roo Hook Transit Extension",
+  "description": "Smart hook: mock when file exists + auto-transit mode when no mock file",
+  "version": "0.1.7",
   "publisher": "roo-code-hook",
   "engines": {
     "vscode": "^1.74.0"
@@ -12,28 +12,32 @@
   "contributes": {
     "commands": [
       {
-        "command": "roo-hook-tester.stop",
+        "command": "roo-hook-transit.stop",
         "title": "Stop Roo Hook Server"
       },
       {
-        "command": "roo-hook-tester.clear",
+        "command": "roo-hook-transit.clear",
         "title": "Clear Roo Hook Logs"
       },
       {
-        "command": "roo-hook-tester.start",
+        "command": "roo-hook-transit.start",
         "title": "Start Roo Hook"
       },
       {
-        "command": "roo-hook-tester.status",
+        "command": "roo-hook-transit.status",
         "title": "Roo Hook Status"
       },
       {
-        "command": "roo-hook-tester.toggleAutoStart",
+        "command": "roo-hook-transit.resetSession",
+        "title": "Reset Mock Session"
+      },
+      {
+        "command": "roo-hook-transit.toggleAutoStart",
         "title": "Toggle Auto Start Hook"
       }
     ]
   },
-  "main": "./out/extension-v4.js",
+  "main": "./out/extension.js",
   "scripts": {
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./"
